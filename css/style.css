@@ -518,6 +518,55 @@ nav.scrolled {
 }
 
 /* ======= SKILLS SECTION ======= */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.tech-card {
+    background-color: rgba(26, 16, 60, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+
+.tech-card:hover {
+    background-color: var(--surface-hover);
+    border-color: var(--accent);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.2);
+}
+
+.tech-card i {
+    font-size: 3.8rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+    transition: var(--transition);
+}
+
+.tech-card:hover i {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+}
+
+.tech-card span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
